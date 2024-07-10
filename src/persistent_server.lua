@@ -39,7 +39,7 @@ while true do
   end
 
   if recv_ready and #recv_ready >= 1 then
-    log.debugf("recv ready: %s", inspect(recv_ready))
+    log.debugf("recv ready:\n%s", inspect(recv_ready))
     for _, sock in ipairs(recv_ready) do
       if sock == srv_skt then
         log.tracef("Server Socket accepting")
