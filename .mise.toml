@@ -1,0 +1,5 @@
+[tools]
+lua = "5.4"
+
+[env]
+_.file = '.env'
